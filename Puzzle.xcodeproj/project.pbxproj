@@ -18,6 +18,9 @@
 		C3560E801739E4F200B5C818 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */; };
 		C3560E831739E4F200B5C818 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */; };
 		C3560E861739E4F200B5C818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E851739E4F200B5C818 /* ViewController.m */; };
+		C3560E8F1739E54000B5C818 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E8E1739E54000B5C818 /* Player.m */; };
+		C3560E9A1739EDF200B5C818 /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E991739EDF200B5C818 /* Puzzle.m */; };
+		C3560E9D1739EECD00B5C818 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E9C1739EECD00B5C818 /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		C3560E821739E4F200B5C818 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3560E841739E4F200B5C818 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C3560E851739E4F200B5C818 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3560E8D1739E54000B5C818 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Puzzle/Player.h; sourceTree = "<group>"; };
+		C3560E8E1739E54000B5C818 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Puzzle/Player.m; sourceTree = "<group>"; };
+		C3560E981739EDF200B5C818 /* Puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
+		C3560E991739EDF200B5C818 /* Puzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Puzzle.m; sourceTree = "<group>"; };
+		C3560E9B1739EECD00B5C818 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		C3560E9C1739EECD00B5C818 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 		C3560E5A1739E4F100B5C818 = {
 			isa = PBXGroup;
 			children = (
+				C3560E8C1739E50A00B5C818 /* Model */,
 				C3560E6F1739E4F200B5C818 /* Puzzle */,
 				C3560E681739E4F200B5C818 /* Frameworks */,
 				C3560E661739E4F200B5C818 /* Products */,
@@ -105,6 +115,19 @@
 				C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3560E8C1739E50A00B5C818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3560E8D1739E54000B5C818 /* Player.h */,
+				C3560E8E1739E54000B5C818 /* Player.m */,
+				C3560E981739EDF200B5C818 /* Puzzle.h */,
+				C3560E991739EDF200B5C818 /* Puzzle.m */,
+				C3560E9B1739EECD00B5C818 /* Tile.h */,
+				C3560E9C1739EECD00B5C818 /* Tile.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +199,9 @@
 				C3560E761739E4F200B5C818 /* main.m in Sources */,
 				C3560E7A1739E4F200B5C818 /* AppDelegate.m in Sources */,
 				C3560E861739E4F200B5C818 /* ViewController.m in Sources */,
+				C3560E8F1739E54000B5C818 /* Player.m in Sources */,
+				C3560E9A1739EDF200B5C818 /* Puzzle.m in Sources */,
+				C3560E9D1739EECD00B5C818 /* Tile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +318,7 @@
 				C3560E8B1739E4F200B5C818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
