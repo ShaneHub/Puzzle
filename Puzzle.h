@@ -1,5 +1,5 @@
 //
-//  Board.h
+//  Puzzle.h
 //  Puzzle
 //
 //  Created by debugx on 5/7/13.
@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "Tile.h"
 
-@interface Board : NSObject
+@interface Puzzle : NSObject
 
 @property (nonatomic, strong) NSMutableArray *matrix;
 @property (nonatomic, strong) Tile *empty;
 
 
--(void) initBoard;
 -(void) initMatrix;
 -(void) randomize;
 -(void) sortMatrix;
@@ -23,6 +22,7 @@
 -(BOOL) isEmpty: (NSInteger) position;
 -(Tile*)getTileAtPosition: (NSInteger) position;
 -( NSInteger)getPositionOfTile: (Tile*) tile;
+- (Tile*) tileAtIndex: (NSInteger)index;
 
 
 ////continue here..

@@ -11,15 +11,28 @@
 #import "Tile.h"
 #include <stdlib.h>
 
-@implementation Board
+@implementation Puzzle
 
--(void) initBoard {
+
+
+-(id) init {
+    self = [super init];
+
+    NSLog(@"initialized puzzle");
     _matrix = [NSMutableArray new];
     [self initMatrix];
+    for (int i = 0; i < 16; i++) {
+        NSString *imageName = [NSString stringWithFormat:@"tile%i.jpg", i+1];
+        Tile *newTile = [[Tile alloc]init];
+        newTile.tileImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+        [self.matrix insertObject:newTile atIndex:i];
+        NSLog(@"created image %@", newTile.tileImage);
+    }
     do{
         [self randomize];
-    }while([self verifyParity] == true);
+    }while(![self verifyParity]);
     //I STOPPED HERE...
+    return self;
 }
 -(void) initMatrix{
     for (int i = 0; i < 4; i++) {
@@ -117,6 +130,13 @@
     }
      return  FALSE;
 }
+
+- (Tile*) tileAtIndex: (NSInteger)index {
+    id tile = [self.matrix objectAtIndex:index];
+    NSLog(@"returned tile at %@", [tile tileImage]);
+    return [self.matrix objectAtIndex:index];
+}
+
 @end
 
 

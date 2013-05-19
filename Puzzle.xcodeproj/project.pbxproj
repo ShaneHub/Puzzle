@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F18975217497D7000DBE69F /* tile1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974117497D6F00DBE69F /* tile1.jpg */; };
+		0F18975317497D7000DBE69F /* tile2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974217497D6F00DBE69F /* tile2.jpg */; };
+		0F18975417497D7000DBE69F /* tile3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974317497D6F00DBE69F /* tile3.jpg */; };
+		0F18975517497D7000DBE69F /* tile4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974417497D6F00DBE69F /* tile4.jpg */; };
+		0F18975617497D7000DBE69F /* tile5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974517497D7000DBE69F /* tile5.jpg */; };
+		0F18975717497D7000DBE69F /* tile6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974617497D7000DBE69F /* tile6.jpg */; };
+		0F18975817497D7000DBE69F /* tile7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974717497D7000DBE69F /* tile7.jpg */; };
+		0F18975917497D7000DBE69F /* tile8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974817497D7000DBE69F /* tile8.jpg */; };
+		0F18975A17497D7000DBE69F /* tile9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974917497D7000DBE69F /* tile9.jpg */; };
+		0F18975B17497D7000DBE69F /* tile10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974A17497D7000DBE69F /* tile10.jpg */; };
+		0F18975D17497D7000DBE69F /* tile11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974C17497D7000DBE69F /* tile11.jpg */; };
+		0F18975E17497D7000DBE69F /* tile12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974D17497D7000DBE69F /* tile12.jpg */; };
+		0F18975F17497D7000DBE69F /* tile13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974E17497D7000DBE69F /* tile13.jpg */; };
+		0F18976017497D7000DBE69F /* tile14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18974F17497D7000DBE69F /* tile14.jpg */; };
+		0F18976117497D7000DBE69F /* tile15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18975017497D7000DBE69F /* tile15.jpg */; };
+		0F18976217497D7000DBE69F /* tile16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F18975117497D7000DBE69F /* tile16.jpg */; };
 		C3560E6A1739E4F200B5C818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E691739E4F200B5C818 /* UIKit.framework */; };
 		C3560E6C1739E4F200B5C818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E6B1739E4F200B5C818 /* Foundation.framework */; };
 		C3560E6E1739E4F200B5C818 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E6D1739E4F200B5C818 /* CoreGraphics.framework */; };
@@ -17,13 +33,29 @@
 		C3560E7E1739E4F200B5C818 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7D1739E4F200B5C818 /* Default@2x.png */; };
 		C3560E801739E4F200B5C818 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */; };
 		C3560E831739E4F200B5C818 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */; };
-		C3560E861739E4F200B5C818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E851739E4F200B5C818 /* ViewController.m */; };
+		C3560E861739E4F200B5C818 /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E851739E4F200B5C818 /* PuzzleViewController.m */; };
 		C3560E8F1739E54000B5C818 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E8E1739E54000B5C818 /* Player.m */; };
 		C3560E9A1739EDF200B5C818 /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E991739EDF200B5C818 /* Puzzle.m */; };
 		C3560E9D1739EECD00B5C818 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E9C1739EECD00B5C818 /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F18974117497D6F00DBE69F /* tile1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile1.jpg; path = ../../../../../Desktop/tiles/tile1.jpg; sourceTree = "<group>"; };
+		0F18974217497D6F00DBE69F /* tile2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile2.jpg; path = ../../../../../Desktop/tiles/tile2.jpg; sourceTree = "<group>"; };
+		0F18974317497D6F00DBE69F /* tile3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile3.jpg; path = ../../../../../Desktop/tiles/tile3.jpg; sourceTree = "<group>"; };
+		0F18974417497D6F00DBE69F /* tile4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile4.jpg; path = ../../../../../Desktop/tiles/tile4.jpg; sourceTree = "<group>"; };
+		0F18974517497D7000DBE69F /* tile5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile5.jpg; path = ../../../../../Desktop/tiles/tile5.jpg; sourceTree = "<group>"; };
+		0F18974617497D7000DBE69F /* tile6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile6.jpg; path = ../../../../../Desktop/tiles/tile6.jpg; sourceTree = "<group>"; };
+		0F18974717497D7000DBE69F /* tile7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile7.jpg; path = ../../../../../Desktop/tiles/tile7.jpg; sourceTree = "<group>"; };
+		0F18974817497D7000DBE69F /* tile8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile8.jpg; path = ../../../../../Desktop/tiles/tile8.jpg; sourceTree = "<group>"; };
+		0F18974917497D7000DBE69F /* tile9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile9.jpg; path = ../../../../../Desktop/tiles/tile9.jpg; sourceTree = "<group>"; };
+		0F18974A17497D7000DBE69F /* tile10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile10.jpg; path = ../../../../../Desktop/tiles/tile10.jpg; sourceTree = "<group>"; };
+		0F18974C17497D7000DBE69F /* tile11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile11.jpg; path = ../../../../../Desktop/tiles/tile11.jpg; sourceTree = "<group>"; };
+		0F18974D17497D7000DBE69F /* tile12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile12.jpg; path = ../../../../../Desktop/tiles/tile12.jpg; sourceTree = "<group>"; };
+		0F18974E17497D7000DBE69F /* tile13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile13.jpg; path = ../../../../../Desktop/tiles/tile13.jpg; sourceTree = "<group>"; };
+		0F18974F17497D7000DBE69F /* tile14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile14.jpg; path = ../../../../../Desktop/tiles/tile14.jpg; sourceTree = "<group>"; };
+		0F18975017497D7000DBE69F /* tile15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile15.jpg; path = ../../../../../Desktop/tiles/tile15.jpg; sourceTree = "<group>"; };
+		0F18975117497D7000DBE69F /* tile16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tile16.jpg; path = ../../../../../Desktop/tiles/tile16.jpg; sourceTree = "<group>"; };
 		C3560E651739E4F200B5C818 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3560E691739E4F200B5C818 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3560E6B1739E4F200B5C818 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,8 +70,8 @@
 		C3560E7D1739E4F200B5C818 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C3560E821739E4F200B5C818 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C3560E841739E4F200B5C818 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3560E851739E4F200B5C818 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3560E841739E4F200B5C818 /* PuzzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
+		C3560E851739E4F200B5C818 /* PuzzleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
 		C3560E8D1739E54000B5C818 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Puzzle/Player.h; sourceTree = "<group>"; };
 		C3560E8E1739E54000B5C818 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Puzzle/Player.m; sourceTree = "<group>"; };
 		C3560E981739EDF200B5C818 /* Puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
@@ -96,8 +128,8 @@
 				C3560E781739E4F200B5C818 /* AppDelegate.h */,
 				C3560E791739E4F200B5C818 /* AppDelegate.m */,
 				C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */,
-				C3560E841739E4F200B5C818 /* ViewController.h */,
-				C3560E851739E4F200B5C818 /* ViewController.m */,
+				C3560E841739E4F200B5C818 /* PuzzleViewController.h */,
+				C3560E851739E4F200B5C818 /* PuzzleViewController.m */,
 				C3560E701739E4F200B5C818 /* Supporting Files */,
 			);
 			path = Puzzle;
@@ -106,6 +138,22 @@
 		C3560E701739E4F200B5C818 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F18974117497D6F00DBE69F /* tile1.jpg */,
+				0F18974217497D6F00DBE69F /* tile2.jpg */,
+				0F18974317497D6F00DBE69F /* tile3.jpg */,
+				0F18974417497D6F00DBE69F /* tile4.jpg */,
+				0F18974517497D7000DBE69F /* tile5.jpg */,
+				0F18974617497D7000DBE69F /* tile6.jpg */,
+				0F18974717497D7000DBE69F /* tile7.jpg */,
+				0F18974817497D7000DBE69F /* tile8.jpg */,
+				0F18974917497D7000DBE69F /* tile9.jpg */,
+				0F18974A17497D7000DBE69F /* tile10.jpg */,
+				0F18974C17497D7000DBE69F /* tile11.jpg */,
+				0F18974D17497D7000DBE69F /* tile12.jpg */,
+				0F18974E17497D7000DBE69F /* tile13.jpg */,
+				0F18974F17497D7000DBE69F /* tile14.jpg */,
+				0F18975017497D7000DBE69F /* tile15.jpg */,
+				0F18975117497D7000DBE69F /* tile16.jpg */,
 				C3560E711739E4F200B5C818 /* Puzzle-Info.plist */,
 				C3560E721739E4F200B5C818 /* InfoPlist.strings */,
 				C3560E751739E4F200B5C818 /* main.m */,
@@ -181,6 +229,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F18975217497D7000DBE69F /* tile1.jpg in Resources */,
+				0F18975317497D7000DBE69F /* tile2.jpg in Resources */,
+				0F18975417497D7000DBE69F /* tile3.jpg in Resources */,
+				0F18975517497D7000DBE69F /* tile4.jpg in Resources */,
+				0F18975617497D7000DBE69F /* tile5.jpg in Resources */,
+				0F18975717497D7000DBE69F /* tile6.jpg in Resources */,
+				0F18975817497D7000DBE69F /* tile7.jpg in Resources */,
+				0F18975917497D7000DBE69F /* tile8.jpg in Resources */,
+				0F18975A17497D7000DBE69F /* tile9.jpg in Resources */,
+				0F18975B17497D7000DBE69F /* tile10.jpg in Resources */,
+				0F18975D17497D7000DBE69F /* tile11.jpg in Resources */,
+				0F18975E17497D7000DBE69F /* tile12.jpg in Resources */,
+				0F18975F17497D7000DBE69F /* tile13.jpg in Resources */,
+				0F18976017497D7000DBE69F /* tile14.jpg in Resources */,
+				0F18976117497D7000DBE69F /* tile15.jpg in Resources */,
+				0F18976217497D7000DBE69F /* tile16.jpg in Resources */,
 				C3560E741739E4F200B5C818 /* InfoPlist.strings in Resources */,
 				C3560E7C1739E4F200B5C818 /* Default.png in Resources */,
 				C3560E7E1739E4F200B5C818 /* Default@2x.png in Resources */,
@@ -198,7 +262,7 @@
 			files = (
 				C3560E761739E4F200B5C818 /* main.m in Sources */,
 				C3560E7A1739E4F200B5C818 /* AppDelegate.m in Sources */,
-				C3560E861739E4F200B5C818 /* ViewController.m in Sources */,
+				C3560E861739E4F200B5C818 /* PuzzleViewController.m in Sources */,
 				C3560E8F1739E54000B5C818 /* Player.m in Sources */,
 				C3560E9A1739EDF200B5C818 /* Puzzle.m in Sources */,
 				C3560E9D1739EECD00B5C818 /* Tile.m in Sources */,
