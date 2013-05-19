@@ -15,4 +15,5 @@
 @property NSInteger currentY;
 @property NSInteger correctX;
 @property NSInteger correctY;
+@property (strong, nonatomic) UIImageView* tileImage;
 @end
