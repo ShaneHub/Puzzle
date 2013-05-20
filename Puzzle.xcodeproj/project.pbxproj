@@ -23,6 +23,7 @@
 		0F1897931749911000DBE69F /* tile7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F189772174990E300DBE69F /* tile7.jpg */; };
 		0F1897941749911000DBE69F /* tile8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F189773174990E300DBE69F /* tile8.jpg */; };
 		0F1897951749911000DBE69F /* tile9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F189774174990E300DBE69F /* tile9.jpg */; };
+		0F18979817499A8100DBE69F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F18979617499A8100DBE69F /* MainStoryboard.storyboard */; };
 		C3560E6A1739E4F200B5C818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E691739E4F200B5C818 /* UIKit.framework */; };
 		C3560E6C1739E4F200B5C818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E6B1739E4F200B5C818 /* Foundation.framework */; };
 		C3560E6E1739E4F200B5C818 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3560E6D1739E4F200B5C818 /* CoreGraphics.framework */; };
@@ -32,7 +33,6 @@
 		C3560E7C1739E4F200B5C818 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7B1739E4F200B5C818 /* Default.png */; };
 		C3560E7E1739E4F200B5C818 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7D1739E4F200B5C818 /* Default@2x.png */; };
 		C3560E801739E4F200B5C818 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */; };
-		C3560E831739E4F200B5C818 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */; };
 		C3560E861739E4F200B5C818 /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E851739E4F200B5C818 /* PuzzleViewController.m */; };
 		C3560E8F1739E54000B5C818 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E8E1739E54000B5C818 /* Player.m */; };
 		C3560E9A1739EDF200B5C818 /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C3560E991739EDF200B5C818 /* Puzzle.m */; };
@@ -56,6 +56,7 @@
 		0F189772174990E300DBE69F /* tile7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tile7.jpg; sourceTree = "<group>"; };
 		0F189773174990E300DBE69F /* tile8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tile8.jpg; sourceTree = "<group>"; };
 		0F189774174990E300DBE69F /* tile9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tile9.jpg; sourceTree = "<group>"; };
+		0F18979717499A8100DBE69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3560E651739E4F200B5C818 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3560E691739E4F200B5C818 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3560E6B1739E4F200B5C818 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,7 +70,6 @@
 		C3560E7B1739E4F200B5C818 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C3560E7D1739E4F200B5C818 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C3560E7F1739E4F200B5C818 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C3560E821739E4F200B5C818 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3560E841739E4F200B5C818 /* PuzzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
 		C3560E851739E4F200B5C818 /* PuzzleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
 		C3560E8D1739E54000B5C818 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Puzzle/Player.h; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			children = (
 				C3560E781739E4F200B5C818 /* AppDelegate.h */,
 				C3560E791739E4F200B5C818 /* AppDelegate.m */,
-				C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */,
+				0F18979617499A8100DBE69F /* MainStoryboard.storyboard */,
 				C3560E841739E4F200B5C818 /* PuzzleViewController.h */,
 				C3560E851739E4F200B5C818 /* PuzzleViewController.m */,
 				C3560E701739E4F200B5C818 /* Supporting Files */,
@@ -258,7 +258,7 @@
 				C3560E7C1739E4F200B5C818 /* Default.png in Resources */,
 				C3560E7E1739E4F200B5C818 /* Default@2x.png in Resources */,
 				C3560E801739E4F200B5C818 /* Default-568h@2x.png in Resources */,
-				C3560E831739E4F200B5C818 /* MainStoryboard.storyboard in Resources */,
+				0F18979817499A8100DBE69F /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,20 +281,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0F18979617499A8100DBE69F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F18979717499A8100DBE69F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		C3560E721739E4F200B5C818 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C3560E731739E4F200B5C818 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C3560E811739E4F200B5C818 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3560E821739E4F200B5C818 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

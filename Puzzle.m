@@ -21,13 +21,7 @@
     NSLog(@"initialized puzzle");
     _matrix = [NSMutableArray new];
     [self initMatrix];
-    for (int i = 0; i < 16; i++) {
-        NSString *imageName = [NSString stringWithFormat:@"tile%i.jpg", i+1];
-        Tile *newTile = [[Tile alloc]init];
-        newTile.tileImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
-        [self.matrix insertObject:newTile atIndex:i];
-        NSLog(@"created image %@", newTile.tileImage);
-    }
+    
     do{
         [self randomize];
     }while(![self verifyParity]);
@@ -39,7 +33,10 @@
         for (int j = 0; j < 4; j++) {
             Tile *t = [Tile new];
             t.currentX = i; t.currentY = j; t.position = (i*4) + j;
+            NSString *imageName = [NSString stringWithFormat:@"tile%i.jpg", (i*4)+j+1];
+            t.tileImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
             [_matrix addObject: t];
+            
         }
     }
     [self setEmpty: [_matrix objectAtIndex:15]];
