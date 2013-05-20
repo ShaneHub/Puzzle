@@ -32,10 +32,11 @@
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             Tile *t = [Tile new];
-            t.currentX = i; t.currentY = j; t.position = (i*4) + j;
-            NSString *imageName = [NSString stringWithFormat:@"tile%i.jpg", (i*4)+j+1];
+            t.position = (i*4) + j;
+            NSString *imageName = [NSString stringWithFormat:@"tile%i.jpg", t.position +1];
             t.tileImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
-            [_matrix addObject: t];
+            NSLog(@"set image %i", t.position);
+            [_matrix insertObject:t atIndex:t.position];
             
         }
     }
@@ -43,7 +44,7 @@
 }
 
 -(void) randomize{
-    [self sortMatrix];
+    //[self sortMatrix];
     int remainingElements = [_matrix count];
     int num;
     
@@ -53,9 +54,9 @@
          [_matrix replaceObjectAtIndex:num  withObject:[_matrix objectAtIndex:remainingElements-1]];
          [_matrix replaceObjectAtIndex:remainingElements-1 withObject: tmp];
          
-         if ([[_matrix objectAtIndex:remainingElements-1] position] == 0) {
+         /*if ([[_matrix objectAtIndex:remainingElements-1] position] == 0) {
              [self setEmpty: [_matrix objectAtIndex:remainingElements-1]];
-         }
+         }*/
          remainingElements--;
      }
 }
@@ -98,20 +99,22 @@
 }
 
 -(BOOL)validMove: (NSInteger) position{
-    if ((abs(position - [_empty position]) ==1) || (abs(position - [_empty position]) ==4)){
-          return TRUE;
+    if ((abs(position - [self.matrix indexOfObject:self.empty]) ==1) || (abs(position - [self.matrix indexOfObject:self.empty]) ==4)){
+          return YES;
     }
-    return  FALSE;
+    return  NO;
 }
                                                     
 -( BOOL)moveTile: (NSInteger) position{
     if ([self validMove:position]){
-        Tile *tmp = [_matrix objectAtIndex:position];
-         [_matrix replaceObjectAtIndex:position  withObject:[self empty]];
-         [_matrix replaceObjectAtIndex:[_empty position] withObject: tmp];
-        return TRUE;
+        NSLog(@"tried to move tile %i", position);
+        
+        NSInteger position2 = [self.matrix indexOfObject:self.empty];
+        [self.matrix exchangeObjectAtIndex:position withObjectAtIndex:position2];
+
+        return YES;
     }
-    return  FALSE;
+    return  NO;
 }
 
 -(BOOL) gameOver{
@@ -120,12 +123,12 @@
         for(int i = 0; i < 15;  i++){
             if ([[_matrix objectAtIndex:i] position] != i )
             {
-                return  FALSE;
+                return  NO;
             }
         }
-        return TRUE;
+        return YES;
     }
-     return  FALSE;
+     return  NO;
 }
 
 - (Tile*) tileAtIndex: (NSInteger)index {
