@@ -26,14 +26,15 @@
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    NSIndexPath *emptyPath = [[NSIndexPath alloc]initWithIndex:[self.puzzle.matrix indexOfObject:self.puzzle.empty]];
+    NSIndexPath *emptyPath = [NSIndexPath indexPathForRow:[self.puzzle.matrix indexOfObject:self.puzzle.empty] inSection:indexPath.section];
     UICollectionViewCell *cell2 = [collectionView cellForItemAtIndexPath:emptyPath];
-    cell.alpha = 0.75;
+    //cell.alpha = 0.75;
     
     if ([self.puzzle moveTile:indexPath.row]) {
         cell.backgroundView = [self.puzzle tileAtIndex: indexPath.row].tileImage;
         cell2.backgroundView = [self.puzzle tileAtIndex: emptyPath.row].tileImage;
     }
+
 }
 
 
