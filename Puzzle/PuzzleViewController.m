@@ -33,6 +33,9 @@
     if ([self.puzzle moveTile:indexPath.row]) {
         cell.backgroundView = [self.puzzle tileAtIndex: indexPath.row].tileImage;
         cell2.backgroundView = [self.puzzle tileAtIndex: emptyPath.row].tileImage;
+        if ([self.puzzle gameOver]) {
+            [self performSegueWithIdentifier:@"winner" sender:self];
+        }
     }
 
 }
@@ -42,6 +45,12 @@
 
 
 #pragma mark - Collection View Data Source
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
+    
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)collectionView {
     return 1;
