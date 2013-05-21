@@ -75,7 +75,7 @@
 }
 -(BOOL) verifyParity{
     int i, j;
-    BOOL ret = true;
+    BOOL ret = YES;
     
     for (i = 0; i <[_matrix count] - 1; i++){
         for (j = i+1; j < [_matrix count] ; j++){
