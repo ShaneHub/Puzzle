@@ -99,8 +99,15 @@
 }
 
 -(BOOL)validMove: (NSInteger) position{
-    if ((abs(position - [self.matrix indexOfObject:self.empty]) ==1) || (abs(position - [self.matrix indexOfObject:self.empty]) ==4)){
-          return YES;
+    NSInteger emptyPosition = [self.matrix indexOfObject:self.empty];
+    if ((abs(position - emptyPosition) ==1) || (abs(position - emptyPosition) ==4)){
+        if (position % 4 == 0 && position - emptyPosition == 1) {
+            return NO;
+        }
+        if (emptyPosition % 4 == 0 && emptyPosition - position == 1) {
+            return NO;
+        }
+        return YES;
     }
     return  NO;
 }
